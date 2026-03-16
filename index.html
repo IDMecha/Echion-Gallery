@@ -2,60 +2,184 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>이터널리턴 실험체 공략</title>
+    <title>에키온 논문</title>
     <style>
+        :root{
+            --bg-main:#0f1117;
+            --bg-card:#1a1d26;
+            --bg-soft:#222634;
+            --text-main:#e6e6e6;
+            --text-sub:#aab0c0;
+            --accent:#5da9ff;
+            --accent-soft:#2d4e7a;
+            --border:#2a2f3d;
+            --warn:#3a2f12;
+            --info:#0f2a3a;
+        }
+
+        *{box-sizing:border-box}
+
         body {
             font-family: 'Malgun Gothic', sans-serif;
-            margin: 40px;
-            background-color: #f5f6fa;
-            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.7;
         }
+
         .container {
             max-width: 1000px;
             margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: var(--bg-card);
+            padding: 36px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+            border:1px solid var(--border);
         }
-        h1, h2, h3 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 8px;
+
+        h1 {
+            font-size: 34px;
+            margin-top:0;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 14px;
         }
+
+        h2 {
+            margin-top: 42px;
+            font-size: 24px;
+            border-left: 6px solid var(--accent);
+            padding-left: 12px;
+            background: linear-gradient(to right, rgba(93,169,255,0.08), transparent);
+        }
+
+        h3 {
+            margin-top: 26px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        p { color: var(--text-sub); }
+
+        ul { color: var(--text-sub); }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px 0;
+            margin: 18px 0;
+            overflow: hidden;
+            border-radius: 12px;
         }
+
         th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
+            border: 1px solid var(--border);
+            padding: 12px;
             text-align: center;
         }
+
         th {
-            background-color: #f0f0f0;
+            background-color: var(--bg-soft);
+            color: var(--text-main);
+            font-weight: 600;
         }
+
+        td { background-color: #151822; color: var(--text-sub); }
+
+        tr:hover td { background-color: #1c2130; }
+
         .highlight {
-            background-color: #fff3cd;
-            padding: 10px;
-            border-radius: 8px;
-            margin: 10px 0;
+            background-color: var(--warn);
+            border-left: 5px solid #f7c948;
+            padding: 16px;
+            border-radius: 10px;
+            margin: 18px 0;
         }
+
         .tip {
-            background-color: #e7f5ff;
-            padding: 10px;
-            border-radius: 8px;
-            margin: 10px 0;
+            background-color: var(--info);
+            border-left: 5px solid #4dabf7;
+            padding: 16px;
+            border-radius: 10px;
+            margin: 18px 0;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        .badge{
+            display:inline-block;
+            padding:4px 10px;
+            border-radius:999px;
+            font-size:12px;
+            background:var(--accent-soft);
+            color:#cfe6ff;
+            margin-left:8px;
+        }
+
+        .grid-2{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:18px;
+        }
+
+        @media (max-width:768px){
+            body{padding:20px 12px}
+            .container{padding:22px}
+            .grid-2{grid-template-columns:1fr}
         }
     </style>
 </head>
 <body>
-		<div class="container">
-	
-	    <h1>🎮 에키온 논문 작성중 <span class="badge">made by Mecha (ver: '26.03) </span></h1>
-		</div>
-		<script>
-			// 스크립트 선언부
-		</script>
-	</body>
+<div class="container">
+
+    <h1>🎮 에키온 논문 <span class="badge">made by Mecha('26.03.16 ~ )</span></h1>
+
+    <h2>📌 기본 정보</h2>
+    <table>
+        <tr>
+            <th>대충 목차</th>
+            <td>1</td>
+            <th>2</th>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <h2>(photo) 내용</h2>
+    <ul>
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+    </ul>
+
+    <h2> 스킬 </h2>
+
+    <h3>P</h3>
+    <p>[스킬 효과 설명]</p>
+
+    <h3>Q</h3>
+    <p>[스킬 효과 설명]</p>
+
+    <h3>W</h3>
+    <p>[스킬 효과 설명]</p>
+
+    <h3>E</h3>
+    <p>[스킬 효과 설명]</p>
+
+    <h3>R</h3>
+    <p>[스킬 효과 설명]</p>
+
+    <div class="highlight">
+        💡 넌 방금 "핵심"을 찔렀어
+    </div>
+
+    <div class="tip">
+        🎯 TIP: 
+    </div>
+
+</div>
+</body>
 </html>
