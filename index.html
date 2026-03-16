@@ -1,54 +1,55 @@
-<html>
-	<head>
-		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이터널리턴 실험체 공략</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            margin: 40px;
+            background-color: #f5f6fa;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
         .highlight {
-            background-color: var(--warn);
-            border-left: 5px solid #f7c948;
-            padding: 16px;
-            border-radius: 10px;
-            margin: 18px 0;
+            background-color: #fff3cd;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
         }
-
         .tip {
-            background-color: var(--info);
-            border-left: 5px solid #4dabf7;
-            padding: 16px;
-            border-radius: 10px;
-            margin: 18px 0;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        a:hover { text-decoration: underline; }
-
-        .badge{
-            display:inline-block;
-            padding:4px 10px;
-            border-radius:999px;
-            font-size:12px;
-            background:var(--accent-soft);
-            color:#cfe6ff;
-            margin-left:8px;
-        }
-
-        .grid-2{
-            display:grid;
-            grid-template-columns:1fr 1fr;
-            gap:18px;
-        }
-
-        @media (max-width:768px){
-            body{padding:20px 12px}
-            .container{padding:22px}
-            .grid-2{grid-template-columns:1fr}
+            background-color: #e7f5ff;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
         }
     </style>
 </head>
-	<body>
+<body>
 		<div class="container">
 	
 	    <h1>🎮 에키온 뉴비를 위한 에키온 섦여서 <span class="badge">made by Mecha (ver: '26.03) </span></h1>
