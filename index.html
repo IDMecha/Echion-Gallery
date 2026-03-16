@@ -1,9 +1,53 @@
 <html>
 	<head>
-		<meta charset="UTF-8">
 		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	</head>
-	
+		<meta charset="UTF-8">
+        .highlight {
+            background-color: var(--warn);
+            border-left: 5px solid #f7c948;
+            padding: 16px;
+            border-radius: 10px;
+            margin: 18px 0;
+        }
+
+        .tip {
+            background-color: var(--info);
+            border-left: 5px solid #4dabf7;
+            padding: 16px;
+            border-radius: 10px;
+            margin: 18px 0;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        .badge{
+            display:inline-block;
+            padding:4px 10px;
+            border-radius:999px;
+            font-size:12px;
+            background:var(--accent-soft);
+            color:#cfe6ff;
+            margin-left:8px;
+        }
+
+        .grid-2{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:18px;
+        }
+
+        @media (max-width:768px){
+            body{padding:20px 12px}
+            .container{padding:22px}
+            .grid-2{grid-template-columns:1fr}
+        }
+    </style>
+</head>
 	<body>
 	
 		<script>
